@@ -35,9 +35,7 @@ module.exports = merge(common, {
         },
         extractComments: true,
       }),
-      new CssMinimizerPlugin({
-        sourceMap: true,
-      }),
+      new CssMinimizerPlugin({}),
     ],
     splitChunks: {
       chunks: "all",
